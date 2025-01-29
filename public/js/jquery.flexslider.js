@@ -71,7 +71,7 @@
           return false;
         }());
         // CONTROLSCONTAINER:
-        if (slider.vars.controlsContainer !== "") slider.controlsContainer = $(slider.vars.controlsContainer).length > 0 && $(slider.vars.controlsContainer);
+        if (slider.vars.controlsContainer !== "") slider.controlsContainer = $(slider).find(slider.vars.controlsContainer).length > 0 && $(slider).find(slider.vars.controlsContainer);
         // MANUAL:
         if (slider.vars.manualControls !== "") slider.manualControls = $(slider.vars.manualControls).length > 0 && $(slider.vars.manualControls);
 
