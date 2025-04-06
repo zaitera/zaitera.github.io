@@ -32,7 +32,7 @@ class Resume extends Component {
                     <p>{education.description}</p></div>
             })
 
-            var experience = this.props.data.experience.map(function (experience) {
+            var experience = (this.props.data?.experience || []).map(function (experience) {
                 return <div key={experience.company}><h3><a href={experience.link} target="_blank"
                                                             rel="noopener noreferrer" onClick={() => {
                     sendEvent('Accessed \'' + experience.company + '\'s website', 'Went to external website')
@@ -103,15 +103,17 @@ class Resume extends Component {
                 </div>
 
 
-                <div className="row work">
-                    <div className="three columns header-col">
-                        <h1><span>Experience</span></h1>
-                    </div>
+                {(this.props.data?.experience && this.props.data.experience.length > 0) && (
+                    <div className="row work">
+                        <div className="three columns header-col">
+                            <h1><span>Experience</span></h1>
+                        </div>
 
-                    <div className="nine columns main-col">
-                        {experience}
+                        <div className="nine columns main-col">
+                            {experience}
+                        </div>
                     </div>
-                </div>
+                )}
 
                 <div className="row work">
                     <div className="three columns header-col">
