@@ -46,11 +46,6 @@ class About extends Component {
                        Email: <span>{email}</span>
                    </p>
                </div>
-                <div className="columns download">
-                  <p>
-                     <a href={resumeDownload} className="button" onClick={ () => {this.sendEvent()}} target="_blank" rel="noopener noreferrer"><i className="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
             </div>
          </div>
       </div>
