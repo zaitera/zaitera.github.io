@@ -173,19 +173,19 @@
         "title": "Machine Assembler",
         "category": "An educational assembler, parser, and pre-processor designed to demonstrate machine language fundamentals.",
         "image": "assembler-instructions.png",
-        "url": "https://github.com/abdullah-zaiter/Hypothetical-Machine-Assembler"
+        "url": "https://github.com/zaitera/Hypothetical-Machine-Assembler"
       },
       {
         "title": "Generic Camera Calibrator",
         "category": "A tool for calibrating camera intrinsic and extrinsic parameters using OpenCV and chessboard patterns.",
         "image": "camcalib.png",
-        "url": "https://github.com/abdullah-zaiter/Camera-Calibration"
+        "url": "https://github.com/zaitera/Camera-Calibration"
       },
       {
         "title": "ML Production Service",
         "category": "A project that scales a basic machine learning model into a production-grade web service.",
         "image": "readme_structure.png",
-        "url": "https://github.com/abdullah-zaiter/ML-Service-Production"
+        "url": "https://github.com/zaitera/ML-Service-Production"
       },
       {
         "title": "Soraiva-bot",
