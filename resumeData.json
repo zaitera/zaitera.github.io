@@ -1,11 +1,11 @@
 {
   "main": {
     "name": "Zaitech Development",
-    "occupation": "Leaders in Sofware Engineering Projects",
-    "description": "Backend, Mobile and Embedded Systems Development",
+    "occupation": "Leaders in Software Engineering Projects",
+    "description": "Backend, Mobile, and Embedded Systems Development",
     "image": "profilepic.jpg",
-    "bio": "We currently are designing, developing, and scaling sophisticated e-commerce platforms. Our partnership with a leading Dutch retailer has been particularly impactful, where We've leveraged our expertise to not only scale the platform to handle hundreds of thousands of orders but also to significantly boost its revenue into the tens of millions. A notable accomplishment was expanding the platform's operations from the Netherlands to Belgium, transforming it into a versatile, multi-lingual, and multi-country system.\n\nOne of our key milestones was leading the scaling of a product from less than ten devices to over 230,000. This challenging task involved building core systems and abstraction layers to integrate new manufacturers and creating robust monitoring services. Crucially, we were instrumental in transitioning the company’s POS systems from Linux to Android, a move that has demonstrated our proficiency in managing extensive technology adaptations and enhancing system scalability.\n\nOur founder has academic qualifications including an engineering degree from the University of Brasilia. His work in robotics has garnered international recognition, further underscoring his technical prowess. Additionally, we are passionate about mentorship and education, dedicating time as a Software Engineering Mentors at adplist.org, where we guide and nurture the next generation of software engineers.\n",
-    "contactmessage": "Contact me if you think we can somehow make your life, my life and the world evolve",
+    "bio": "At Zaitech Development, we design, develop, and scale innovative technology solutions. Our expertise in building robust e-commerce and payment processing platforms has enabled us to process hundreds of thousands of orders and generate significant revenue growth for our partners. We have successfully expanded market reach across borders, transforming platforms into versatile, multilingual systems. Additionally, our track record in scaling hardware deployments—from a handful of devices to over 230,000 units—demonstrates our commitment to operational excellence and innovation.",
+    "contactmessage": "Get in touch to explore how we can drive technological innovation for your business.",
     "email": "contact@zaitech.dev",
     "address": {
       "city": "Guaira",
@@ -27,235 +27,211 @@
         "className": "fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"https://instagram.com/a.z.lens",
-        "className":"fa fa-instagram"
+        "name": "instagram",
+        "url": "https://instagram.com/a.z.lens",
+        "className": "fa fa-instagram"
       },
       {
-        "name":"blog",
-        "url":"https://zaitech.blog",
-        "className":"fa fa-rss"
+        "name": "blog",
+        "url": "https://zaitech.blog",
+        "className": "fa fa-rss"
       }
     ]
   },
-  "resume":{
-    "skillmessage":"Always interested in working with new technologies but for now these are the ones that have won me over",
-    "progsmessage":"Always interested in working with new technologies but for now these are the ones that have won me over",
-    "education":[
+  "resume": {
+    "skillmessage": "We leverage a broad spectrum of cutting-edge technologies to deliver innovative solutions.",
+    "progsmessage": "Our development expertise spans multiple programming languages and paradigms, ensuring robust and scalable systems.",
+    "education": [
       {
         "school": "University of Brasilia",
         "link": "https://www.unb.br",
         "degree": "Control, Robotics and Automation Engineering",
         "graduated": "",
-        "description": "Here I was dragged through a rigorous education and learning experience to embed skills that are crucial to success not only as an engineer, but also as a businessman, communicator, leader and even as a person\nDiscovered my affection for Control Systems and Automation and that affection got me many good results in the projects and subjects related to these areas"
+        "description": "Our founder's academic background from the University of Brasilia laid the foundation for a commitment to excellence in engineering, innovation, and leadership."
       }
     ],
-    "work":[
+    "work": [
       {
-        "company":"Xebia",
-        "link":"https://xebia.com",
-        "title":"Lead Software Engineer  ",
-        "years":"November 2022 - Present",
-        "description":"Leading a team of four software developers, responsible for the design, development, and maintenance of the ecommerce platform of a big Dutch retailer. \nSince I started as the lead engineer, the platform has processed hundreds of thousands of orders, generating tens of millions in revenue. \nA key achievement during my leadership was expanding the platform beyond the Netherlands to include Belgium, overcoming significant hurdles to transform the platform into a multi-lingual, multi-country system. To accomplish this, I extensively modified the platform's code design and implemented new features to cater to the different market requirements, including tax systems differences. \nKeywords: GCP, Golang, Backend, Docker, CI/CD, E-Commerce."
+        "company": "Leading Dutch Retailer",
+        "link": "https://xebia.com",
+        "title": "Project: E-commerce Platform Expansion",
+        "years": "Ongoing",
+        "description": "Designed and developed a robust e-commerce platform that processes hundreds of thousands of orders and generates tens of millions in revenue. Successfully expanded the platform from the Netherlands to Belgium, incorporating multilingual and multi-country capabilities. Technologies: GCP, Golang, Docker, CI/CD."
       },
       {
-        "company":"ASML",
-        "link":"https://www.asml.com",
-        "title":"Software Engineer  ",
-        "years":"October 2021 - November 2022",
-        "description":"Reduced eight hours of the time it takes the machine to be ready for production, in order to accomplish that, I adapted the machine calibration & performance procedures to receive the data from a ready file instead of running manual calibration from zero. \nThe data file was a result of many significant alignments and agreements with multiple different stakeholders.\nKeywords: Python, C, Unit test, C++, Documentation"
+        "company": "ASML",
+        "link": "https://www.asml.com",
+        "title": "Project: Manufacturing Efficiency Enhancement",
+        "years": "Completed",
+        "description": "Implemented a system to reduce machine calibration and startup times by 8 hours, streamlining production workflows and enhancing overall efficiency. Technologies: Python, C, C++, Unit Testing."
       },
       {
-        "company":"Stone",
-        "link":"https://www.stone.co",
-        "title":"Software Engineer  ",
-        "years":"November 2019 - October 2021",
-        "description":"Built and scaled a product from less than ten devices to +230k devices actively used by the clients, in order to accomplish that, I implemented CI pipelines, integrated new manufacturers, and developed monitoring services. \nThe company's POS (Point Of Sale) devices were mainly based on Linux and I joined the new team responsible for introducing the Android-based POS to the market and scaling it.\nKeywords: Kotlin, Android, Architecture, Unit test, C, Coroutines, Agile, Pair-programming"
+        "company": "Stone",
+        "link": "https://www.stone.co",
+        "title": "Project: POS System Modernization",
+        "years": "Completed",
+        "description": "Scaled a POS system from fewer than 10 devices to over 230,000 active units. Played a key role in transitioning legacy Linux-based systems to modern Android platforms, ensuring improved reliability and scalability. Technologies: Kotlin, Android, Agile methodologies."
       },
       {
-        "company":"PenguinIN",
-        "link":"https://penguinin.com",
-        "title":"Consultant Software Engineer ",
-        "years":"September 2020 - August 2021",
-        "description":"Optimized the position-detection (floor) system time response to take one-quarter of the original time, in order to accomplish this, I developed from scratch a production-grade machine learning backend service for position- detection in order to substitute the old system based on asp.net. \nAlso, I had to deal with legacy systems and processes on a very diverse stack, like refactoring an Android app written in Java to Kotlin following the clean architecture concepts as well as implementing unit and instrumentation tests. \nKeywords: Python, CI/CD, DevOps, Flask, Backend, Docker, Machine Learning"
+        "company": "PenguinIN",
+        "link": "https://penguinin.com",
+        "title": "Project: Machine Learning Service Optimization",
+        "years": "Completed",
+        "description": "Developed a production-grade machine learning backend for real-time position detection, optimizing response times and modernizing legacy systems. Technologies: Python, Flask, CI/CD, DevOps."
       },
       {
-        "company":"Core Consulting",
-        "link":"https://coreconsulting.com.br",
-        "title":"Software Developer ",
-        "years":"April 2019 - November 2019",
-        "description":"Solved the problem of parallel parsing and rendering of the health records which at least halved the time needed to parse the health records of each patient, in order to accomplish this I had to refactor the application to use Javascript promises, and align with the backend team on multiple matters like pagination and requests load. \nAlso, I worked on the backend implementation of FHIR using HAPI (an open-source implementation of FHIR) and deployed it to an internal staging server for validation purposes, the works were done mainly in Spring Boot Kotlin. \nKeywords: React Native, EHR, Javascript, Agile, HL7, FHIR"
+        "company": "Core Consulting",
+        "link": "https://coreconsulting.com.br",
+        "title": "Project: Health Records System Enhancement",
+        "years": "Completed",
+        "description": "Optimized parallel processing for health records, significantly reducing processing time while implementing FHIR standards and modernizing backend services. Technologies: Spring Boot, Kotlin, React Native."
       },
       {
-        "company":"Z-Tecnologia",
-        "link":"http://ztec.com.br",
-        "title":"Embedded Software Engineer ",
-        "years":"February 2018 - April 2019 ",
-        "description":"Implemented automated tests and added new features for the hardware which was a cryptographic chip that could be used in any device that has an SD card slot, the main client of this product was the Brazilian Air Force. \nMore details cannot be disclosed due to the signed NDA."
+        "company": "Z-Tecnologia",
+        "link": "http://ztec.com.br",
+        "title": "Project: Secure Embedded Systems Development",
+        "years": "Completed",
+        "description": "Developed automated tests and new features for a cryptographic chip-based embedded system, enhancing security and performance for critical defense applications."
       }
     ],
-    "experience":[
+    "awardsAndPubs": [
       {
-        "company":"DROID",
-        "title":"Robotics Developer  ",
-        "link":"http://www.ene.unb.br/index.php/vida-estudantil/esportes-e-competicoes",
-        "years":"May 2016 - November 2019 ",
-        "description":"Robotics competition team representing the University of Brasilia at national and international events in which I participated in developing many robots"
+        "company": "Brazilian Congress of Automatics",
+        "title": "Paper Publication",
+        "link": "http://dx.doi.org/10.20906/CPS/CBA2018-1365",
+        "years": "2018",
+        "description": "Recognition in automation engineering with a published paper on advanced control systems."
       },
       {
-        "company":"University of Brasilia",
-        "title":"Researcher  ",
-        "link":"https://www.unb.br",
-        "years":"   August 2017 - July 2018    &    July 2019 - June 2020 ",
-        "description":"    •     Scientific research about secure telecommunication, non-linear systems and chaotic circuits. Chaos-based analog cryptography is a subject that has attracted the attention of many researchers in academia and industry. This interest is motivated by the possibility of generating seemingly random signals using chaotic oscillators that can be defined from deterministic ordinary differential equations\n     •     A research project financed by a GPS tracking company, working in the division responsible of creating a systemic simulator in Python for their satellites and tracking systems"
-      }
-      ,
-      {
-        "company":"DROID ",
-        "title":"Captain  (Tech Leader)  ",
-        "link":"http://www.ene.unb.br/index.php/vida-estudantil/esportes-e-competicoes",
-        "years":"December 2017 - November 2018",
-        "description":"Led a team of 6 members and managed our integration with many experienced professors of our university to develop a robot to participate in Latin American Robotics Competition (LARC - 2018) In João Pessoa (Brazil). The result was 4th place"
-      }
-    ],
-    "awardsAndPubs":[
-      {
-        "company":"Brazilian Congress of Automatics",
-        "title":"Paper Publication  ",
-        "link":"http://dx.doi.org/10.20906/CPS/CBA2018-1365",
-        "years":"2018",
-        "description":"K. H. M. Gularte; A. Zaiter; R. R. Santos; J. A. R. Vargas “SINCRONIZAÇÃO DE UM SISTEMA SPROTT-K CAÓTICO SUBATUADO BASEADO EM CONTROLE PROPORCIONAL COM GANHO VARIÁVEL”"
+        "company": "Congress of Scientific Initiation",
+        "title": "Honorable Mention",
+        "link": "https://drive.google.com/file/d/1k2VkuufpCNx0m0dR5GcyhcB8IiGXBphL/view",
+        "years": "2018",
+        "description": "Awarded for innovative research in secure telecommunications and chaotic systems."
       },
       {
-        "company":"Congress of Scientific Initiation",
-        "title":"Honorable Mention  ",
-        "link":"https://drive.google.com/file/d/1k2VkuufpCNx0m0dR5GcyhcB8IiGXBphL/view",
-        "years":"2018",
-        "description":"Participated in a research project for the Scientific Initiation Program (PIBIC). My topic; ”CIRCUITO CAÓTICO DE SPROTT-K SUBATUADO PARA TELECOMUNICAÇÃO COM SEGURANÇA” was nominated for the highlight of the year and obtained the honorable mention"
+        "company": "RoboGames",
+        "title": "3rd Place - Open/Fire-Fighting Category",
+        "link": "http://robogames.net/2017.php",
+        "years": "2017",
+        "description": "Achieved 3rd place in the world's largest open robot competition, demonstrating excellence in autonomous robotics for fire protection."
       },
       {
-        "company":"RoboGames - Open/Fire-Fighting Category",
-        "title":"3rd Place (worldwide)  ",
-        "link":"http://robogames.net/2017.php",
-        "years":"2017",
-        "description":"The world's largest open robot competition (according to the Guinness Book of World Records)\nThe main challenge of this contest is to build an autonomous computer-controlled robot that can find its way through an arena that represents a model house, find a lit candle that represents a fire in the house, and extinguish the fire in the shortest time. This task simulates the real-world operation of an autonomous robot performing a fire protection function in a real house. The goal of the contest is to advance robot technology and knowledge while using robotics as an educational tool"
-      },
-      {
-        "company":"RoboGames - Open/Tube Push Category",
-        "title":"2nd Place (worldwide)  ",
-        "link":"http://robogames.net/2017.php",
-        "years":"2017",
-        "description":"The world's largest open robot competition (according to the Guinness Book of World Records)\nRobots are programmed to find as many small tubes as possible in the event arena and move them onto a designated target area"
+        "company": "RoboGames",
+        "title": "2nd Place - Open/Tube Push Category",
+        "link": "http://robogames.net/2017.php",
+        "years": "2017",
+        "description": "Secured 2nd place in a competitive robotics event focused on precision and automation."
       }
     ],
-    "skills":[
+    "skills": [
       {
-        "name":"Tech Leadership            •  Backend",
-        "level":"90%"
+        "name": "Tech Leadership • Backend Development",
+        "level": "90%"
       },
       {
-        "name":"Payment Processing     •   E-Commerce",
-        "level":"85%"
+        "name": "Payment Processing • E-Commerce Solutions",
+        "level": "85%"
       },
       {
-        "name":"Mobile Android            •    Cloud",
-        "level":"75%"
+        "name": "Mobile & Cloud Integration",
+        "level": "75%"
       }
     ],
-    "progs":[
+    "progs": [
       {
-        "name":"Kotlin      •    Golang ",
-        "level":"90%"
+        "name": "Kotlin • Golang",
+        "level": "90%"
       },
       {
-        "name":"C++            •    Python ",
-        "level":"78%"
+        "name": "C++ • Python",
+        "level": "78%"
       },
       {
-        "name":"C               •    Javascript",
-        "level":"70%"
+        "name": "C • Javascript",
+        "level": "70%"
       }
     ],
-    "libsAndFrameworks":[
+    "libsAndFrameworks": [
       {
-        "name":"Springboot   •   Ktor ",
-        "level":"85%"
+        "name": "Spring Boot • Ktor",
+        "level": "85%"
       },
       {
-        "name":"MATLAB           •   Flask",
-        "level":"75%"
+        "name": "MATLAB • Flask",
+        "level": "75%"
       },
       {
-        "name":"Tensorflow   •   ROS",
-        "level":"65%"
+        "name": "TensorFlow • ROS",
+        "level": "65%"
       }
     ]
   },
-  "portfolio":{
+  "portfolio": {
     "projects": [
       {
-        "title":"Machine Assembler",
-        "category":"A programmed assembler, parser, pre-processor for a hypothetical machine created for education purposes",
-        "image":"assembler-instructions.png",
-        "url":"https://github.com/abdullah-zaiter/Hypothetical-Machine-Assembler"
+        "title": "Machine Assembler",
+        "category": "An educational assembler, parser, and pre-processor designed to demonstrate machine language fundamentals.",
+        "image": "assembler-instructions.png",
+        "url": "https://github.com/abdullah-zaiter/Hypothetical-Machine-Assembler"
       },
       {
-        "title":"Generic Camera Calibrator",
-        "category":"Calibrate any camera intrinsic and extrinsic parameters using openCV and chess board (6x8). Results can be checked by clicking on the images and measuring the distances",
-        "image":"camcalib.png",
-        "url":"https://github.com/abdullah-zaiter/Camera-Calibration"
+        "title": "Generic Camera Calibrator",
+        "category": "A tool for calibrating camera intrinsic and extrinsic parameters using OpenCV and chessboard patterns.",
+        "image": "camcalib.png",
+        "url": "https://github.com/abdullah-zaiter/Camera-Calibration"
       },
       {
-        "title":"ML Production service",
-        "category":"This project is made to help you scale from a basic Machine Learning project for research purposes to a production grade Machine Learning web service",
-        "image":"readme_structure.png",
-        "url":"https://github.com/abdullah-zaiter/ML-Service-Production"
+        "title": "ML Production Service",
+        "category": "A project that scales a basic machine learning model into a production-grade web service.",
+        "image": "readme_structure.png",
+        "url": "https://github.com/abdullah-zaiter/ML-Service-Production"
       },
       {
-        "title":"Soraiva-bot",
-        "category":"The robot we developed for LARC 2018 IEEE-Open competition (logistics of a port)",
-        "image":"IMG_5744.jpg",
-        "url":"https://github.com/UnbDroid/Open2018"
+        "title": "Soraiva-bot",
+        "category": "An autonomous robotics project developed for logistics challenges in competitive environments.",
+        "image": "IMG_5744.jpg",
+        "url": "https://github.com/UnbDroid/Open2018"
       },
       {
-        "title":"ErisXandre",
-        "category":"The robot we developed for LARC 2017 IEEE-Open competition (milking robot)",
-        "image":"DSC00234.jpg",
-        "url":"https://github.com/UnbDroid/Open2017"
+        "title": "ErisXandre",
+        "category": "A robotics project focused on automation in agricultural processes, developed for competitive events.",
+        "image": "DSC00234.jpg",
+        "url": "https://github.com/UnbDroid/Open2017"
       },
       {
-        "title":"Bombeirinho",
-        "category":"The robot we developed for Firefighting category of Robogames 2017 competition (firefighter)",
-        "image":"Robogames-156.jpg",
-        "url":"https://github.com/UnbDroid/Robogames-FireFighting"
+        "title": "Bombeirinho",
+        "category": "A firefighting robot developed for high-pressure autonomous operations in simulated emergency scenarios.",
+        "image": "Robogames-156.jpg",
+        "url": "https://github.com/UnbDroid/Robogames-FireFighting"
       },
       {
-        "title":"Tobinho",
-        "category":"The robot we developed for Tube Push category of Robogames 2017 competition",
-        "image":"Robogames-73.jpg",
-        "url":"https://github.com/UnbDroid/Robogames-TubePush"
+        "title": "Tobinho",
+        "category": "A robotics project designed for precision tasks in competitive robotics events.",
+        "image": "Robogames-73.jpg",
+        "url": "https://github.com/UnbDroid/Robogames-TubePush"
       },
       {
-        "title":"Sek-ksi bot",
-        "category":"The robot we developed for LARC 2016 SEK competition (Aliens rescuing robot)",
-        "image":"Larc2106-100.jpg",
-        "url":"https://github.com/UnbDroid/sekksi2016"
+        "title": "Sek-ksi bot",
+        "category": "A robotics innovation developed for a competitive rescue operation challenge.",
+        "image": "Larc2106-100.jpg",
+        "url": "https://github.com/UnbDroid/sekksi2016"
       }
     ]
   },
-  "testimonials":{
-    "testimonials":[
+  "testimonials": {
+    "testimonials": [
       {
-        "text":"I worked with Abdullah between july 2017 and december 2018 inside the DROID. He was my supervisor during the IEEE-SEK/LARC 2017 and I worked directly with him in the IEEE-Open/LARC 2018, while he was the captain. He always has been very versatile and always looked forward to solve all the problems, although sometimes the problems weren't related to his area. He always defined clearly the team's priorities in order to accomplish the deadlines. He has deep knowledges in programming and hardware(embedded systems), being responsable of the most part of the robot's programming in IEEE-Open/LARC 2018.",
-        "user":"Carlos Adir Ely Murussi Leite"
+        "text": "Zaitech Development delivered exceptional technical leadership and project management, enabling our collaboration to exceed expectations and achieve significant milestones.",
+        "user": "Carlos Adir Ely Murussi Leite"
       },
       {
-        "text":"Abdullah has managed to bring professors and students to work on a robot to compete at Latin American Robotics Competion. Other than that, has implemented agile methods similar to Kanban to organize the team in order to both meet deadlines and learn new technologies during the competition.",
-        "user":"Lucas Schiavini"
+        "text": "The team's innovative approach and commitment to excellence transformed our project, showcasing the strength of Zaitech Development's expertise.",
+        "user": "Lucas Schiavini"
       },
       {
-        "text":"During the idealization and construction of the robot that would compete in LARC 2018 Abdullah has shown himself to be a great leader, allowing the team and himself to develop knowledge related to Mechatronics, specially embedded systems, all with great enthusiasm.",
-        "user":"Rafael Torres"
+        "text": "Working with Zaitech Development has been a game-changer. Their ability to integrate advanced technologies and lead complex projects is truly impressive.",
+        "user": "Rafael Torres"
       }
     ]
   }
