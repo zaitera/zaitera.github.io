@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { useEffect } from "react";
-import { initGA } from "./lib/analytics";
+import { initGA, setupSectionTracking } from "./lib/analytics";
 
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
@@ -35,10 +35,14 @@ function AppContent() {
 function App() {
   useEffect(() => {
     // Initialize Google Analytics when the app starts
-    const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
-    if (measurementId) {
-      initGA(measurementId);
-    }
+    initGA('G-VJ87CS1PZ0');
+    
+    // Setup section tracking after components mount
+    const timer = setTimeout(() => {
+      setupSectionTracking();
+    }, 1000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (

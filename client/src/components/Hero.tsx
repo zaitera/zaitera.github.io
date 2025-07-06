@@ -17,7 +17,7 @@ export default function Hero() {
 
   if (!personalInfo) {
     return (
-      <section className="pt-20 pb-16 bg-gradient-to-br from-muted/50 to-muted">
+      <section data-section="hero" className="pt-20 pb-16 bg-gradient-to-br from-muted/50 to-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="animate-pulse">
             <div className="h-8 bg-muted rounded w-3/4 mb-4"></div>
@@ -54,7 +54,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="pt-20 pb-16 bg-gradient-to-br from-muted/50 to-muted">
+    <section data-section="hero" className="pt-20 pb-16 bg-gradient-to-br from-muted/50 to-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
           {/* Avatar Section - Now at the top */}
@@ -75,7 +75,7 @@ export default function Hero() {
           {/* Content Section - Now below the avatar */}
           <div className="max-w-4xl animate-slide-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Senior Consultant & Founder of Zaitech
+              Senior Consultant & Founder of Zaitech Development
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               {personalInfo.bio}

@@ -15,7 +15,7 @@ export default function Education() {
 
   if (!educationData) {
     return (
-      <section className="py-16 bg-background">
+      <section data-section="education" className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="animate-pulse">
             <div className="h-8 bg-muted rounded w-1/2 mx-auto mb-8"></div>
@@ -29,7 +29,7 @@ export default function Education() {
   }
 
   return (
-    <section className="py-16 bg-background">
+    <section data-section="education" className="py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Education & Research</h2>

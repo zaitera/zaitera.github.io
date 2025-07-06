@@ -15,7 +15,7 @@ export default function About() {
 
   if (!aboutData) {
     return (
-      <section id="about" className="py-16 bg-background">
+      <section id="about" data-section="about" className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="animate-pulse">
             <div className="h-8 bg-muted rounded w-1/2 mx-auto mb-8"></div>
@@ -34,7 +34,7 @@ export default function About() {
   }
 
   return (
-    <section id="about" className="py-16 bg-background">
+    <section id="about" data-section="about" className="py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{aboutData.title}</h2>

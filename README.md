@@ -28,26 +28,35 @@ The built files will be in the `dist` directory, ready for deployment to any sta
 
 ## GitHub Pages Deployment
 
-### Automatic Deployment with GitHub Actions
+### Simple Deployment with npm
 
 1. Push your code to a GitHub repository
-2. Go to your repository Settings > Pages
-3. Select "GitHub Actions" as the source
-4. The `.github/workflows/deploy.yml` file is already configured for automatic deployment
-5. Push changes to the main branch to trigger automatic deployment
-
-### Manual Deployment
-
-Alternatively, you can build locally and push to the `gh-pages` branch:
+2. Run the deploy command:
 
 ```bash
-# Build the site
-npm run build
+# Install dependencies (if not already done)
+npm install
 
-# Deploy to GitHub Pages (requires gh-pages package)
-npm install -g gh-pages
-gh-pages -d dist
+# Build and deploy to GitHub Pages
+npm run deploy
 ```
+
+This will automatically:
+- Build your site
+- Create/update the `gh-pages` branch
+- Deploy to GitHub Pages
+
+Your site will be available at: `https://yourusername.github.io/repository-name`
+
+### First Time Setup
+
+If this is your first deployment, you may need to:
+
+1. Go to your GitHub repository
+2. Navigate to Settings > Pages
+3. Set Source to "Deploy from a branch"
+4. Select `gh-pages` branch and `/ (root)` folder
+5. Click Save
 
 ## Project Structure
 
@@ -59,7 +68,6 @@ gh-pages -d dist
 │   │   └── ...
 │   └── public/            # Static assets
 ├── attached_assets/       # Additional assets
-├── .github/workflows/     # GitHub Actions for deployment
 └── dist/                  # Built static files (generated)
 ```
 
@@ -72,30 +80,23 @@ gh-pages -d dist
 - **Radix UI** - Accessible UI components
 - **Framer Motion** - Animations
 
-## Configuration
-
-### Google Analytics (Optional)
-
-1. Copy `.env.example` to `.env.local`
-2. Add your Google Analytics Measurement ID:
-   ```
-   VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-   ```
-
 ## Customization
 
 1. Update the JSON files in `client/src/data/` to customize your content
 2. Replace assets in `client/public/` and `attached_assets/` with your own
 3. Modify components in `client/src/components/` to change the layout and design
+4. To use your own Google Analytics ID, update the hardcoded value in:
+   - `client/index.html` (lines 10 and 16)
+   - `client/src/App.tsx` (line 36)
 
 ## Deployment to Other Platforms
 
 This static site can be deployed to any static hosting service:
 
-- **Netlify**: Connect your GitHub repo for automatic deployments
-- **Vercel**: Import your GitHub project for seamless deployment
-- **GitHub Pages**: Use the included GitHub Actions workflow
+- **Netlify**: Drag and drop the `dist` folder or connect your GitHub repo
+- **Vercel**: Import your GitHub project 
 - **Surge.sh**: Run `npm run build && surge dist/`
+- **Any web server**: Upload the `dist` folder contents
 
 ## License
 

@@ -2,23 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-// Plugin to replace environment variables in HTML during build
-const htmlEnvReplace = () => {
-  return {
-    name: 'html-env-replace',
-    transformIndexHtml(html: string) {
-      return html.replace(
-        /%VITE_GA_MEASUREMENT_ID%/g,
-        process.env.VITE_GA_MEASUREMENT_ID || ''
-      );
-    },
-  };
-};
-
 export default defineConfig({
   plugins: [
     react(),
-    htmlEnvReplace(),
   ],
   resolve: {
     alias: {

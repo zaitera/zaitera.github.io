@@ -24,7 +24,7 @@ export default function Experience() {
 
   if (!experienceData) {
     return (
-      <section id="experience" className="py-16 bg-background">
+      <section id="experience" data-section="experience" className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="animate-pulse">
             <div className="h-8 bg-muted rounded w-1/2 mx-auto mb-8"></div>
@@ -42,7 +42,7 @@ export default function Experience() {
   const visibleItems = showAll ? experienceData.items : experienceData.items.slice(0, 3);
 
   return (
-    <section id="experience" className="py-16 bg-background">
+    <section id="experience" data-section="experience" className="py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{experienceData.title}</h2>

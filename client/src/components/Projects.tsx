@@ -23,7 +23,7 @@ export default function Projects() {
 
   if (!projectsData) {
     return (
-      <section id="projects" className="py-16 bg-muted/30">
+      <section id="projects" data-section="projects" className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="animate-pulse">
             <div className="h-8 bg-muted rounded w-1/2 mx-auto mb-8"></div>
@@ -39,7 +39,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="py-16 bg-muted/30">
+    <section id="projects" data-section="projects" className="py-16 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{projectsData.title}</h2>

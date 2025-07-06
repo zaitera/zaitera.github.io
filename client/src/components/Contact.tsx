@@ -15,7 +15,7 @@ export default function Contact() {
 
   if (!personalInfo) {
     return (
-      <section id="contact" className="py-16 bg-background">
+      <section id="contact" data-section="contact" className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="animate-pulse">
             <div className="h-8 bg-muted rounded w-1/2 mx-auto mb-8"></div>
@@ -27,7 +27,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16 bg-background">
+    <section id="contact" data-section="contact" className="py-16 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">Contact</h2>

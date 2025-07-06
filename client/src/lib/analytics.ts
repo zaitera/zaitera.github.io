@@ -23,17 +23,6 @@ export const initGA = (measurementId: string) => {
   });
 };
 
-// Track page views
-export const trackPageView = (url: string, title?: string) => {
-  if (typeof window === 'undefined' || !window.gtag) return;
-
-  window.gtag('config', import.meta.env.VITE_GA_MEASUREMENT_ID, {
-    page_path: url,
-    page_title: title || document.title,
-    page_location: window.location.href
-  });
-};
-
 // Track custom events
 export const trackEvent = (
   action: string,
@@ -55,11 +44,6 @@ export const trackButtonClick = (buttonName: string, section?: string) => {
   trackEvent('click', 'engagement', `${section ? section + '_' : ''}${buttonName}`);
 };
 
-// Track contact form submissions
-export const trackContactSubmission = (method: string) => {
-  trackEvent('submit', 'contact', method);
-};
-
 // Track social media clicks
 export const trackSocialClick = (platform: string) => {
   trackEvent('click', 'social', platform);
@@ -68,4 +52,32 @@ export const trackSocialClick = (platform: string) => {
 // Track section views (for scroll tracking)
 export const trackSectionView = (sectionName: string) => {
   trackEvent('view', 'section', sectionName);
+};
+
+// Setup intersection observer for section tracking
+export const setupSectionTracking = () => {
+  if (typeof window === 'undefined') return;
+
+  const sections = document.querySelectorAll('section[data-section]');
+  const trackedSections = new Set<string>();
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+          const sectionName = entry.target.getAttribute('data-section');
+          if (sectionName && !trackedSections.has(sectionName)) {
+            trackedSections.add(sectionName);
+            trackSectionView(sectionName);
+          }
+        }
+      });
+    },
+    {
+      threshold: 0.5,
+      rootMargin: '0px 0px -20% 0px'
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
 };
