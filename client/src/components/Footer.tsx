@@ -1,4 +1,4 @@
-import { Github, Linkedin, Instagram, Rss } from 'lucide-react';
+import { Github, Linkedin, Instagram, Rss, ExternalLink } from 'lucide-react';
 import { PersonalInfo } from '../types';
 import { useTranslations } from '../hooks/useTranslations';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -13,6 +13,10 @@ export default function Footer() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleZaitechClick = () => {
+    window.open(personalInfo?.company?.website, '_blank', 'noopener,noreferrer');
   };
 
   const services = [
@@ -48,7 +52,15 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold text-primary mb-4">{personalInfo.name}</h3>
             <p className="text-gray-300 leading-relaxed mb-6">
-              {t('footer.description')} {personalInfo.company?.name}. {t('footer.specialization')}
+              {t('footer.description')}{' '}
+              <span 
+                onClick={handleZaitechClick}
+                className="cursor-pointer text-gray-200 hover:text-primary transition-all duration-300 group inline-flex items-center font-medium"
+              >
+                {personalInfo.company?.name}
+                <ExternalLink className="h-3 w-3 ml-1 opacity-70 group-hover:opacity-100 group-hover:text-primary transition-all duration-300" />
+              </span>
+              . {t('footer.specialization')}
             </p>
             <div className={`flex ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'}`}>
               <a 

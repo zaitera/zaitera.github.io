@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Mail, Folder, Github, Linkedin, Instagram, MapPin, User, Rss } from 'lucide-react';
+import { Mail, Folder, Github, Linkedin, Instagram, MapPin, User, Rss, ExternalLink } from 'lucide-react';
 import { PersonalInfo } from '../types';
 import { useTranslations } from '../hooks/useTranslations';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -31,6 +31,11 @@ export default function Hero() {
   const handleSocialClick = (platform: string, url: string) => {
     trackSocialClick(platform);
     window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
+  const handleZaitechClick = () => {
+    trackButtonClick('zaitech_website', 'hero_title');
+    window.open(personalInfo?.company?.website, '_blank', 'noopener,noreferrer');
   };
 
   if (loading || !personalInfo) {
@@ -72,7 +77,63 @@ export default function Hero() {
           {/* Content Section - Now below the avatar */}
           <div className="max-w-4xl animate-slide-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {personalInfo?.title || 'Senior Consultant & Founder of Zaitech'}
+              {personalInfo?.title ? (
+                (() => {
+                  const title = personalInfo.title;
+                  const englishZaitech = 'Zaitech';
+                  const arabicZaitech = 'زايتيك';
+                  
+                  // Check if title contains English Zaitech
+                  if (title.includes(englishZaitech)) {
+                    const parts = title.split(englishZaitech);
+                    return (
+                      <>
+                        {parts[0]}
+                        <span 
+                          onClick={handleZaitechClick}
+                          className="relative cursor-pointer text-primary hover:text-primary/90 transition-all duration-300 group inline-flex items-center hover:scale-105 transform"
+                        >
+                          {englishZaitech}
+                          <ExternalLink className="h-4 w-4 ml-1 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+                        </span>
+                        {parts[1]}
+                      </>
+                    );
+                  }
+                  // Check if title contains Arabic Zaitech
+                  else if (title.includes(arabicZaitech)) {
+                    const parts = title.split(arabicZaitech);
+                    return (
+                      <>
+                        {parts[0]}
+                        <span 
+                          onClick={handleZaitechClick}
+                          className="relative cursor-pointer text-primary hover:text-primary/90 transition-all duration-300 group inline-flex items-center hover:scale-105 transform"
+                        >
+                          {arabicZaitech}
+                          <ExternalLink className={`h-4 w-4 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 ${isRTL ? 'mr-1' : 'ml-1'}`} />
+                        </span>
+                        {parts[1]}
+                      </>
+                    );
+                  }
+                  // Fallback: display title as is
+                  else {
+                    return title;
+                  }
+                })()
+              ) : (
+                <>
+                  Senior Consultant & Founder of{' '}
+                  <span 
+                    onClick={handleZaitechClick}
+                    className="relative cursor-pointer text-primary hover:text-primary/90 transition-all duration-300 group inline-flex items-center hover:scale-105 transform"
+                  >
+                    Zaitech
+                    <ExternalLink className="h-4 w-4 ml-1 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+                  </span>
+                </>
+              )}
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               {personalInfo?.bio}
