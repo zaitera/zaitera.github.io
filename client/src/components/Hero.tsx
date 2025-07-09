@@ -72,7 +72,7 @@ export default function Hero() {
           {/* Content Section - Now below the avatar */}
           <div className="max-w-4xl animate-slide-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {personalInfo?.title || 'Senior Consultant & Founder of Zaitech Development'}
+              {personalInfo?.title || 'Senior Consultant & Founder of Zaitech'}
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               {personalInfo?.bio}
