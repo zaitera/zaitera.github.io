@@ -1,6 +1,6 @@
 export const personal = {
-  "name": "عبد الله زيتر",
-  "title": "استشاري أول ومؤسس شركة زايتك للتطوير",
+  "name": "عبد الله زعيتر",
+  "title": "استشاري أول ومؤسس شركة زايتيك",
   "bio": "مهندس ورجل أعمال شغوف متخصص في توسيع المنتجات وتدريب الأشخاص وردم الفجوات الثقافية",
   "email": "abdu.zaiter@gmail.com",
   "location": "العالم",
@@ -10,7 +10,7 @@ export const personal = {
     "instagram": "a.z.lens"
   },
   "company": {
-    "name": "زايتك للتطوير",
+    "name": "زايتيك",
     "website": "https://zaitech.dev",
     "blog": "https://zaitech.blog"
   }

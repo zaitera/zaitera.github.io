@@ -46,20 +46,20 @@ export default function Experience() {
             return (
               <Card key={item.id} className="bg-muted/50 border border-border">
                 <CardContent className="p-8">
-                  <div className={`flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4 ${isRTL ? 'lg:flex-row-reverse' : ''}`}>
+                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
                     <div className="mb-4 lg:mb-0">
                       <h3 className="text-2xl font-semibold text-foreground">{item.title}</h3>
                       <p className="text-primary font-medium text-lg">{item.company}</p>
                       <p className="text-muted-foreground">{item.location}</p>
                     </div>
-                    <div className={`${isRTL ? 'text-left' : 'text-right'}`}>
+                    <div className="text-right rtl:text-left">
                       <p className="text-muted-foreground font-medium">{item.period}</p>
                     </div>
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-6">
                     {item.description}
                   </p>
-                  <div className={`flex flex-wrap gap-2 ${isRTL ? 'justify-end' : ''}`}>
+                  <div className="flex flex-wrap gap-2">
                     {item.skills?.map((skill: string, index: number) => (
                       <Badge key={index} variant="default" className="text-sm font-medium bg-primary/10 text-primary hover:bg-primary/20">
                         {skill}
@@ -81,12 +81,12 @@ export default function Experience() {
             >
               {showAll ? (
                 <>
-                  <ChevronUp className={`h-5 w-5 ${isRTL ? 'ml-2' : 'mr-2'}`} />
+                  <ChevronUp className="h-5 w-5 mr-2 rtl:ml-2 rtl:mr-0" />
                   {t('experience.showLess')}
                 </>
               ) : (
                 <>
-                  <ChevronDown className={`h-5 w-5 ${isRTL ? 'ml-2' : 'mr-2'}`} />
+                  <ChevronDown className="h-5 w-5 mr-2 rtl:ml-2 rtl:mr-0" />
                   {t('experience.showMore')}
                 </>
               )}
