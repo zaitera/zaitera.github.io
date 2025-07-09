@@ -1,6 +1,7 @@
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "./components/ThemeProvider";
+import { LanguageProvider } from "./contexts/LanguageContext";
 import { useEffect } from "react";
 import { initGA, setupSectionTracking } from "./lib/analytics";
 
@@ -46,12 +47,14 @@ function App() {
   }, []);
 
   return (
-    <ThemeProvider>
-      <TooltipProvider>
-        <AppContent />
-        <Toaster />
-      </TooltipProvider>
-    </ThemeProvider>
+    <LanguageProvider>
+      <ThemeProvider>
+        <TooltipProvider>
+          <AppContent />
+          <Toaster />
+        </TooltipProvider>
+      </ThemeProvider>
+    </LanguageProvider>
   );
 }
 

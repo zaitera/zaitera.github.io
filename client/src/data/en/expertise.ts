@@ -1,0 +1,33 @@
+export const expertise = {
+  "title": "Core Expertise",
+  "description": "Specialized services combining technical excellence with leadership development",
+  "items": [
+    {
+      "id": "mentorship",
+      "title": "Mentorship & Career Development",
+      "description": "Personalized guidance for recent graduates and early-career engineers, focusing on practical skills and career progression strategies.",
+      "icon": "user-check",
+      "color": "primary",
+      "metrics": "Helped 50+ Engineers",
+      "technologies": ["Career Planning", "Technical Skills", "Industry Insights"]
+    },
+    {
+      "id": "training",
+      "title": "Advanced Training Programs",
+      "description": "Comprehensive training in Kotlin, Golang, GCP, leadership skills, and communication with hands-on projects and real-world applications.",
+      "icon": "book-open",
+      "color": "primary",
+      "metrics": "200+ Hours Delivered",
+      "technologies": ["Kotlin", "Golang", "GCP", "Leadership", "Communication Skills"]
+    },
+    {
+      "id": "consultancy",
+      "title": "Technical Consultancy",
+      "description": "Strategic technical guidance for scaling systems, architecture decisions, and platform optimization.",
+      "icon": "settings",
+      "color": "primary",
+      "metrics": "Enterprise-grade Solutions",
+      "technologies": ["System Architecture", "Cloud Platforms", "Strategy"]
+    }
+  ]
+};

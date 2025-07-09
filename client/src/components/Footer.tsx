@@ -1,16 +1,12 @@
-import { useEffect, useState } from 'react';
 import { Github, Linkedin, Instagram, Rss } from 'lucide-react';
 import { PersonalInfo } from '../types';
+import { useTranslations } from '../hooks/useTranslations';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Footer() {
-  const [personalInfo, setPersonalInfo] = useState<PersonalInfo | null>(null);
-
-  useEffect(() => {
-    fetch('/src/data/personal.json')
-      .then(res => res.json())
-      .then(data => setPersonalInfo(data))
-      .catch(err => console.error('Error loading personal info:', err));
-  }, []);
+  const { translations, t, loading } = useTranslations();
+  const { isRTL } = useLanguage();
+  const personalInfo = translations.personal;
 
   const handleNavClick = (href: string) => {
     const element = document.querySelector(href);
@@ -20,14 +16,12 @@ export default function Footer() {
   };
 
   const services = [
-    { href: '#expertise', label: 'Technical Consultancy' },
-    { href: '#expertise', label: 'Mentorship Programs' },
-    { href: '#expertise', label: 'Advanced Training' },
+    { href: '#expertise', label: t('footer.services.consultancy') || 'Technical Consultancy' },
+    { href: '#expertise', label: t('footer.services.mentorship') || 'Mentorship Programs' },
+    { href: '#expertise', label: t('footer.services.training') || 'Advanced Training' },
   ];
 
-
-
-  if (!personalInfo) {
+  if (loading || !personalInfo) {
     return (
       <footer className="bg-gray-900 dark:bg-gray-950 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,15 +44,15 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 dark:bg-gray-950 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className={`grid md:grid-cols-4 gap-8 ${isRTL ? 'text-right' : 'text-left'}`}>
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold text-primary mb-4">{personalInfo.name}</h3>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Senior Consultant & Founder of {personalInfo.company.name}. Specializing in scalable solutions, team leadership, and technical mentorship.
+              {t('footer.description')} {personalInfo.company?.name}. {t('footer.specialization')}
             </p>
-            <div className="flex space-x-4">
+            <div className={`flex ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'}`}>
               <a 
-                href={`https://github.com/${personalInfo.social.github}`}
+                href={`https://github.com/${personalInfo.social?.github}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary transition-colors duration-200"
@@ -66,7 +60,7 @@ export default function Footer() {
                 <Github className="h-6 w-6" />
               </a>
               <a 
-                href={`https://linkedin.com/in/${personalInfo.social.linkedin}`}
+                href={`https://linkedin.com/in/${personalInfo.social?.linkedin}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary transition-colors duration-200"
@@ -74,7 +68,7 @@ export default function Footer() {
                 <Linkedin className="h-6 w-6" />
               </a>
               <a 
-                href={personalInfo.company.blog}
+                href={personalInfo.company?.blog}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary transition-colors duration-200"
@@ -82,7 +76,7 @@ export default function Footer() {
                 <Rss className="h-6 w-6" />
               </a>
               <a 
-                href={`https://instagram.com/${personalInfo.social.instagram}`}
+                href={`https://instagram.com/${personalInfo.social?.instagram}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary transition-colors duration-200"
@@ -92,13 +86,13 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.services.title')}</h4>
             <ul className="space-y-2 text-gray-300">
               {services.map((service, index) => (
                 <li key={index}>
                   <button
                     onClick={() => handleNavClick(service.href)}
-                    className="hover:text-primary transition-colors duration-200 text-left"
+                    className={`hover:text-primary transition-colors duration-200 ${isRTL ? 'text-right' : 'text-left'}`}
                   >
                     {service.label}
                   </button>
@@ -110,7 +104,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 {personalInfo.name}. All rights reserved.
+            © 2025 {personalInfo.name}. {t('footer.rights')}
           </p>
         </div>
       </div>

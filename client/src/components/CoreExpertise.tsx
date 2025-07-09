@@ -1,26 +1,16 @@
-import { useEffect, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import * as Icons from 'lucide-react';
 import { ExpertiseItem } from '../types';
-
-interface ExpertiseData {
-  title: string;
-  description: string;
-  items: ExpertiseItem[];
-}
+import { useTranslations } from '../hooks/useTranslations';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function CoreExpertise() {
-  const [expertiseData, setExpertiseData] = useState<ExpertiseData | null>(null);
+  const { translations, loading } = useTranslations();
+  const { isRTL } = useLanguage();
+  const expertiseData = translations.expertise;
 
-  useEffect(() => {
-    fetch('/src/data/expertise.json')
-      .then(res => res.json())
-      .then(data => setExpertiseData(data))
-      .catch(err => console.error('Error loading expertise data:', err));
-  }, []);
-
-  if (!expertiseData) {
+  if (loading || !expertiseData) {
     return (
       <section id="expertise" data-section="expertise" className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,9 +37,9 @@ export default function CoreExpertise() {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
-          {expertiseData.items.map((item) => {
+          {expertiseData.items.map((item: ExpertiseItem) => {
             // Convert kebab-case to PascalCase for icon names
-            const iconName = item.icon.split('-').map(word => 
+            const iconName = item.icon.split('-').map((word: string) => 
               word.charAt(0).toUpperCase() + word.slice(1)
             ).join('');
             const IconComponent = (Icons[iconName as keyof typeof Icons] || Icons.Star) as React.ComponentType<{ className?: string }>;
@@ -64,7 +54,7 @@ export default function CoreExpertise() {
                       <IconComponent className={`h-6 w-6 ${iconColorClass}`} />
                     </div>
                     <h3 className="text-xl font-semibold text-foreground mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
+                    <p className={`text-muted-foreground text-sm leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
                       {item.description}
                     </p>
                   </div>
@@ -74,8 +64,8 @@ export default function CoreExpertise() {
                     </div>
                   )}
                   {item.technologies && (
-                    <div className="flex flex-wrap gap-1 mt-4">
-                      {item.technologies.map((tech, index) => (
+                    <div className={`flex flex-wrap gap-1 mt-4 ${isRTL ? 'justify-end' : ''}`}>
+                      {item.technologies.map((tech: string, index: number) => (
                         <Badge key={index} variant="default" className="text-xs bg-primary/10 text-primary hover:bg-primary/20">
                           {tech}
                         </Badge>

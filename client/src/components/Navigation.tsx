@@ -1,19 +1,24 @@
 import { useState } from 'react';
 import { useTheme } from './ThemeProvider';
+import { useTranslations } from '../hooks/useTranslations';
+import { useLanguage } from '../contexts/LanguageContext';
+import { LanguageToggle } from './LanguageToggle';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Moon, Sun, Menu } from 'lucide-react';
 
 export default function Navigation() {
   const { theme, toggleTheme } = useTheme();
+  const { isRTL } = useLanguage();
+  const { t, translations } = useTranslations();
   const [isOpen, setIsOpen] = useState(false);
 
   const navigationItems = [
-    { href: '#about', label: 'About' },
-    { href: '#expertise', label: 'Expertise' },
-    { href: '#experience', label: 'Experience' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#about', label: t('navigation.about') },
+    { href: '#expertise', label: t('navigation.expertise') },
+    { href: '#experience', label: t('navigation.experience') },
+    { href: '#projects', label: t('navigation.projects') },
+    { href: '#contact', label: t('navigation.contact') },
   ];
 
   const handleNavClick = (href: string) => {
@@ -32,18 +37,18 @@ export default function Navigation() {
             <img 
               src="/logo-light.png" 
               alt="Abdullah Zaiter Logo" 
-              className="h-10 w-10 mr-4 dark:hidden"
+              className={`h-10 w-10 ${isRTL ? 'ml-4' : 'mr-4'} dark:hidden`}
             />
             <img 
               src="/logo-dark.png" 
               alt="Abdullah Zaiter Logo" 
-              className="h-10 w-10 mr-4 hidden dark:block"
+              className={`h-10 w-10 ${isRTL ? 'ml-4' : 'mr-4'} hidden dark:block`}
             />
-            <span className="text-xl font-bold text-primary leading-none">Abdullah Zaiter</span>
+            <span className="text-xl font-bold text-primary leading-none">{translations.personal?.name || 'Abdullah Zaiter'}</span>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className={`hidden md:flex ${isRTL ? 'space-x-reverse space-x-8' : 'space-x-8'}`}>
             {navigationItems.map((item) => (
               <button
                 key={item.href}
@@ -55,7 +60,8 @@ export default function Navigation() {
             ))}
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className={`flex items-center ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'}`}>
+            <LanguageToggle />
             <Button
               variant="ghost"
               size="icon"
@@ -76,13 +82,14 @@ export default function Navigation() {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent>
+              <SheetContent side={isRTL ? 'left' : 'right'}>
                 <div className="flex flex-col space-y-4 mt-8">
+                  <LanguageToggle />
                   {navigationItems.map((item) => (
                     <button
                       key={item.href}
                       onClick={() => handleNavClick(item.href)}
-                      className="text-left py-2 text-muted-foreground hover:text-primary transition-colors duration-200"
+                      className={`py-2 text-muted-foreground hover:text-primary transition-colors duration-200 ${isRTL ? 'text-right' : 'text-left'}`}
                     >
                       {item.label}
                     </button>

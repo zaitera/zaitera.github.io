@@ -84,7 +84,19 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      // Add RTL support
+      spacing: {
+        "rtl-0": "0",
+        "rtl-1": "0.25rem",
+        "rtl-2": "0.5rem",
+        "rtl-3": "0.75rem",
+        "rtl-4": "1rem",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [
+    require("tailwindcss-animate"), 
+    require("@tailwindcss/typography"),
+    require("tailwindcss-rtl")
+  ],
 } satisfies Config;

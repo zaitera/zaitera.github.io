@@ -1,19 +1,15 @@
-import { useEffect, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import * as Icons from 'lucide-react';
+import { useTranslations } from '../hooks/useTranslations';
+import { useLanguage } from '../contexts/LanguageContext';
 import { AboutData } from '../types';
 
 export default function About() {
-  const [aboutData, setAboutData] = useState<AboutData | null>(null);
+  const { translations, loading, t } = useTranslations();
+  const { isRTL } = useLanguage();
+  const aboutData = translations.about;
 
-  useEffect(() => {
-    fetch('/src/data/about.json')
-      .then(res => res.json())
-      .then(data => setAboutData(data))
-      .catch(err => console.error('Error loading about data:', err));
-  }, []);
-
-  if (!aboutData) {
+  if (loading || !aboutData) {
     return (
       <section id="about" data-section="about" className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,11 +38,11 @@ export default function About() {
             {aboutData.description}
           </p>
         </div>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className={`grid lg:grid-cols-2 gap-12 items-center ${isRTL ? 'lg:grid-cols-reverse' : ''}`}>
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-semibold text-foreground mb-4">{aboutData.professionalJourney.title}</h3>
-              {aboutData.professionalJourney.content.map((paragraph, index) => (
+              {aboutData.professionalJourney.content.map((paragraph: string, index: number) => (
                 <p key={index} className="text-muted-foreground leading-relaxed mb-4">
                   {paragraph}
                 </p>
@@ -55,16 +51,16 @@ export default function About() {
           </div>
           <Card className="bg-muted/50">
             <CardContent className="p-8">
-              <h3 className="text-xl font-semibold text-foreground mb-6">Key Achievements</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-6">{t('about.achievements')}</h3>
               <div className="space-y-4">
-                {aboutData.achievements.map((achievement, index) => {
+                {aboutData.achievements.map((achievement: any, index: number) => {
                   // Convert kebab-case to PascalCase for icon names
-                  const iconName = achievement.icon.split('-').map(word => 
+                  const iconName = achievement.icon.split('-').map((word: string) => 
                     word.charAt(0).toUpperCase() + word.slice(1)
                   ).join('');
                   const IconComponent = (Icons[iconName as keyof typeof Icons] || Icons.Star) as React.ComponentType<{ className?: string }>;
                   return (
-                    <div key={index} className="flex items-start space-x-3">
+                    <div key={index} className={`flex items-start ${isRTL ? 'space-x-reverse space-x-3' : 'space-x-3'}`}>
                       <IconComponent className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-medium text-foreground">{achievement.title}</p>
