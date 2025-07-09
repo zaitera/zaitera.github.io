@@ -58,7 +58,7 @@ export default function Footer() {
                 className="cursor-pointer text-gray-200 hover:text-primary transition-all duration-300 group inline-flex items-center font-medium"
               >
                 {personalInfo.company?.name}
-                <ExternalLink className="h-3 w-3 ml-1 opacity-70 group-hover:opacity-100 group-hover:text-primary transition-all duration-300" />
+                <ExternalLink className={`h-3 w-3 opacity-70 group-hover:opacity-100 group-hover:text-primary transition-all duration-300 ${isRTL ? 'mr-1 scale-x-[-1]' : 'ml-1'}`} />
               </span>
               . {t('footer.specialization')}
             </p>

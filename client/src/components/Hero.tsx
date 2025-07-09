@@ -94,7 +94,7 @@ export default function Hero() {
                           className="relative cursor-pointer text-primary hover:text-primary/90 transition-all duration-300 group inline-flex items-center hover:scale-105 transform"
                         >
                           {englishZaitech}
-                          <ExternalLink className="h-4 w-4 ml-1 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+                          <ExternalLink className={`h-4 w-4 ml-1 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 ${isRTL ? 'scale-x-[-1]' : ''}`} />
                         </span>
                         {parts[1]}
                       </>
@@ -111,7 +111,7 @@ export default function Hero() {
                           className="relative cursor-pointer text-primary hover:text-primary/90 transition-all duration-300 group inline-flex items-center hover:scale-105 transform"
                         >
                           {arabicZaitech}
-                          <ExternalLink className={`h-4 w-4 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 ${isRTL ? 'mr-1' : 'ml-1'}`} />
+                          <ExternalLink className={`h-4 w-4 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 ${isRTL ? 'mr-1 scale-x-[-1]' : 'ml-1'}`} />
                         </span>
                         {parts[1]}
                       </>
@@ -130,7 +130,7 @@ export default function Hero() {
                     className="relative cursor-pointer text-primary hover:text-primary/90 transition-all duration-300 group inline-flex items-center hover:scale-105 transform"
                   >
                     Zaitech
-                    <ExternalLink className="h-4 w-4 ml-1 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+                    <ExternalLink className={`h-4 w-4 ml-1 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 ${isRTL ? 'scale-x-[-1]' : ''}`} />
                   </span>
                 </>
               )}
