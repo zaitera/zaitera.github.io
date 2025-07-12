@@ -1,11 +1,11 @@
 export const expertise = {
   "title": "Core Expertise",
-  "description": "Specialized services combining technical excellence with leadership development",
+  "description": "Specialized services designed to bridge the gap between technical excellence and strategic leadership, empowering engineers and organizations to thrive.",
   "items": [
     {
       "id": "mentorship",
       "title": "Mentorship & Career Development",
-      "description": "Personalized guidance for recent graduates and early-career engineers, focusing on practical skills and career progression strategies.",
+      "description": "Offering personalized guidance for recent graduates and early-career engineers. My mentorship focuses on building practical skills, navigating career progression, and achieving long-term professional growth.",
       "icon": "user-check",
       "color": "primary",
       "metrics": "Helped 50+ Engineers",
@@ -14,7 +14,7 @@ export const expertise = {
     {
       "id": "training",
       "title": "Advanced Training Programs",
-      "description": "Comprehensive training in Kotlin, Golang, GCP, leadership skills, and communication with hands-on projects and real-world applications.",
+      "description": "Delivering comprehensive training programs in Kotlin, Golang, and Google Cloud Platform (GCP), alongside essential leadership and communication skills. Each program is enriched with hands-on projects and real-world applications.",
       "icon": "book-open",
       "color": "primary",
       "metrics": "200+ Hours Delivered",
@@ -23,7 +23,7 @@ export const expertise = {
     {
       "id": "consultancy",
       "title": "Technical Consultancy",
-      "description": "Strategic technical guidance for scaling systems, architecture decisions, and platform optimization.",
+      "description": "Providing strategic technical guidance to help businesses make informed decisions on system architecture, platform optimization, and scaling strategies. My goal is to ensure your technology stack is robust, scalable, and aligned with your business objectives.",
       "icon": "settings",
       "color": "primary",
       "metrics": "Enterprise-grade Solutions",

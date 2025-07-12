@@ -1,11 +1,11 @@
 export const projects = {
   "title": "Featured Projects",
-  "description": "Showcasing scalable solutions and innovative implementations across different domains",
+  "description": "A selection of projects that showcase my expertise in building scalable, innovative, and high-impact solutions across various domains.",
   "items": [
     {
       "id": "ecommerce",
       "title": "Multi-Country E-commerce Platform",
-      "description": "Led the expansion of a Dutch retailer's platform to Belgium, implementing multi-lingual support and different tax systems. Platform processes hundreds of thousands of orders monthly.",
+      "description": "I led the strategic expansion of a major Dutch retailer's e-commerce platform into Belgium. This involved architecting multi-lingual support and adapting to different tax systems, resulting in a platform that now processes hundreds of thousands of orders monthly.",
       "image": "/api/placeholder/800/300?text=E-commerce+Platform",
       "metrics": [
         {
@@ -22,7 +22,7 @@ export const projects = {
     {
       "id": "mobile-pos",
       "title": "Mobile POS Platform Scaling",
-      "description": "Scaled Android-based point-of-sale system from 10 to 230,000+ active devices, implementing CI/CD pipelines and monitoring systems for optimal performance.",
+      "description": "I spearheaded the scaling of an Android-based point-of-sale (POS) system from just 10 initial devices to over 230,000 active units. This effort included implementing robust CI/CD pipelines and advanced monitoring systems to ensure seamless performance and reliability.",
       "image": "/api/placeholder/800/300?text=Mobile+POS+System",
       "metrics": [
         {
@@ -39,7 +39,7 @@ export const projects = {
     {
       "id": "ml-position",
       "title": "ML Position Detection System",
-      "description": "Developed production-grade machine learning backend service that reduced position-detection system response time by 75%, replacing legacy .NET infrastructure.",
+      "description": "I developed a production-grade machine learning backend service from scratch that revolutionized a position-detection system. By replacing the legacy .NET infrastructure, the new service reduced response time by 75%, delivering a significant boost in efficiency.",
       "image": "/api/placeholder/800/300?text=ML+Position+Detection",
       "metrics": [
         {

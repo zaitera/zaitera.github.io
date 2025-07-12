@@ -1,61 +1,61 @@
 export const translations = {
   ui: {
     navigation: {
-      about: "نبذة عني",
+      about: "عني",
       experience: "الخبرة",
-      education: "التعليم", 
-      expertise: "المهارات",
+      education: "التعليم",
+      expertise: "الخبرات",
       projects: "المشاريع",
       awards: "الجوائز",
-      contact: "التواصل"
+      contact: "تواصل"
     },
     hero: {
       getInTouch: "تواصل معي",
-      viewProjects: "عرض المشاريع"
+      viewProjects: "شاهد المشاريع"
     },
     about: {
       title: "نبذة عني",
-      achievements: "الإنجازات الرئيسية"
+      achievements: "أبرز الإنجازات"
     },
     experience: {
       title: "الخبرة المهنية",
       present: "الحاضر",
-      showMore: "عرض المزيد من الخبرة",
-      showLess: "عرض أقل من الخبرة"
+      showMore: "عرض المزيد",
+      showLess: "عرض أقل"
     },
     education: {
       title: "التعليم"
     },
     expertise: {
-      title: "المهارات الأساسية"
+      title: "الخبرات الأساسية"
     },
     projects: {
-      title: "المشاريع المميزة",
-      viewProject: "عرض المشروع",
-      viewCode: "عرض الكود"
+      title: "مشاريع مميزة",
+      viewProject: "شاهد المشروع",
+      viewCode: "شاهد الكود"
     },
     awards: {
-      title: "الجوائز والتقديرات"
+      title: "الجوائز والتكريمات"
     },
     contact: {
       title: "تواصل معي",
-      subtitle: "سواء كانت لديك أسئلة أو أفكار لمشاركتها أو ترغب فقط في التواصل - فأنا دائماً مهتم بالمحادثات المفيدة.",
+      subtitle: "سواء كان لديك سؤال، أو فكرة لمناقشتها، أو ببساطة تود التواصل، أنا دائماً منفتح على الحوارات الهادفة.",
       email: "البريد الإلكتروني",
       location: "الموقع",
-      github: "جيت هاب",
-      linkedin: "لينكدإن",
-      instagram: "إنستغرام"
+      github: "GitHub",
+      linkedin: "LinkedIn",
+      instagram: "Instagram"
     },
     footer: {
-      description: "استشاري أول ومؤسس",
-      specialization: "متخصص في الحلول القابلة للتوسع وقيادة الفرق والإرشاد التقني.",
+      description: "مستشار أول ومؤسس",
+      specialization: "متخصص في الحلول القابلة للتطوير، وقيادة الفرق، والإرشاد التقني.",
       rights: "جميع الحقوق محفوظة.",
-      builtWith: "تم بناؤه باستخدام React و TypeScript و Tailwind CSS",
+      builtWith: "تم بناؤه باستخدام React، TypeScript، و Tailwind CSS",
       services: {
         title: "الخدمات",
-        consultancy: "الاستشارات التقنية",
-        mentorship: "برامج الإرشاد",
-        training: "التدريب المتقدم"
+        consultancy: "استشارات تقنية",
+        mentorship: "برامج إرشادية",
+        training: "تدريب متقدم"
       }
     },
     language: {

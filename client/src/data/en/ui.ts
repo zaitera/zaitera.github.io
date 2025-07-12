@@ -2,7 +2,7 @@ export const translations = {
   ui: {
     navigation: {
       about: "About",
-      experience: "Experience", 
+      experience: "Experience",
       education: "Education",
       expertise: "Expertise",
       projects: "Projects",
@@ -39,7 +39,7 @@ export const translations = {
     },
     contact: {
       title: "Get In Touch",
-      subtitle: "Whether you have questions, ideas to share, or just want to connect — I'm always interested in meaningful conversations.",
+      subtitle: "Whether you have a question, an idea to discuss, or simply want to connect, I'm always open to meaningful conversations.",
       email: "Email",
       location: "Location",
       github: "GitHub",

@@ -1,33 +1,34 @@
 export const about = {
   "title": "About Me",
-  "description": "Both Syrian and Brazilian by heart, I've built a career spanning multiple continents, cultures, and technologies. My journey through diverse domains has shaped my perspective on scalable solutions and global collaboration.",
+  "description": "A Syrian-Brazilian software engineer with a passion for building bridges—between cultures, technologies, and continents. My career has taken me from developing cryptographic solutions in Brazil to scaling e-commerce platforms in Europe, giving me a unique perspective on creating globally impactful technology.",
   "professionalJourney": {
     "title": "Professional Journey",
     "content": [
-      "Started at a strategic defense company in Brazil developing cryptographic solutions for the Brazilian Air Force, then expanded across continents - from Silicon Valley ML optimization to Dutch e-commerce scaling across Europe.",
-      "Founded Zaitech Development to channel this global experience into consultancy and mentorship, helping engineers build solutions that scale across cultures and markets."
+      "My career began in Brazil's strategic defense sector, where I developed cryptographic solutions for the Air Force. This foundational experience in security and precision set the stage for my expansion into the global tech scene.",
+      "From optimizing machine learning models in Silicon Valley to scaling e-commerce platforms across Europe, I've embraced challenges that demand both technical depth and cultural understanding.",
+      "I founded Zaitech Development to leverage this global expertise, offering consultancy and mentorship to help engineers and businesses build solutions that resonate across diverse markets."
     ]
   },
   "achievements": [
     {
       "icon": "trending-up",
       "title": "Revenue Impact",
-      "description": "Led platforms generating tens of millions in revenue"
+      "description": "Engineered platforms that have generated tens of millions in revenue, driving business growth and market leadership."
     },
     {
       "icon": "users",
       "title": "Team Leadership",
-      "description": "Guided teams across 4+ countries and cultures"
+      "description": "Successfully led and mentored diverse teams across more than four countries, fostering a culture of collaboration and innovation."
     },
     {
       "icon": "smartphone",
       "title": "Platform Scaling",
-      "description": "Scaled systems from 10 to 230K+ active devices"
+      "description": "Architected and scaled systems from a handful of devices to over 230,000 active units, ensuring reliability and performance."
     },
     {
       "icon": "graduation-cap",
       "title": "Mentorship Impact",
-      "description": "Developed 50+ engineers through training programs"
+      "description": "Passionate about empowering the next generation of engineers, I have mentored over 50 professionals through targeted training and development programs."
     }
   ]
 };

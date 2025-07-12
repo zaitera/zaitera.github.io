@@ -1,16 +1,16 @@
 export const personal = {
-  "name": "عبد الله زعيتر",
-  "title": "استشاري أول ومؤسس شركة زايتيك",
-  "bio": "مهندس ورجل أعمال شغوف متخصص في توسيع المنتجات وتدريب الأشخاص وردم الفجوات الثقافية",
+  "name": "عبدالله زعيتر",
+  "title": "مستشار أول ومؤسس Zaitech",
+  "bio": "مهندس ورائد أعمال شغوف، مكرس لتوسيع نطاق المنتجات، وتمكين الفرق، وسد الفجوات الثقافية من خلال التكنولوجيا.",
   "email": "abdu.zaiter@gmail.com",
-  "location": "كل العالم",
+  "location": "في جميع أنحاء العالم",
   "social": {
     "github": "zaitera",
     "linkedin": "zaitera",
     "instagram": "a.z.lens"
   },
   "company": {
-    "name": "زايتيك",
+    "name": "Zaitech Development",
     "website": "https://zaitech.dev",
     "blog": "https://zaitech.blog"
   }
