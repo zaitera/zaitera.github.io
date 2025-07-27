@@ -3,16 +3,6 @@ export const experience = {
   "description": "A proven track record of delivering scalable, high-impact solutions across diverse industries and global markets.",
   "items": [
     {
-      "id": "xebia",
-      "title": "Senior Consultant",
-      "company": "Xebia",
-      "location": "Utrecht, Netherlands",
-      "period": "2022/11 – Present",
-      "description": "Leading a team of four software developers in designing, developing, and maintaining a major Dutch retailer's e-commerce platform. Under my leadership, the platform has processed hundreds of thousands of orders, generating tens of millions in revenue, and expanded into Belgium, becoming a multi-lingual, multi-country system.",
-      "skills": ["E-Commerce", "Golang", "GCP", "Leadership", "International Expansion"],
-      "color": "primary"
-    },
-    {
       "id": "asml",
       "title": "Lead Software Engineer",
       "company": "ASML",
@@ -21,6 +11,16 @@ export const experience = {
       "description": "Dramatically reduced machine setup time by eight hours by re-engineering calibration and performance procedures to use pre-generated data files instead of manual, from-scratch calibrations. This initiative required extensive collaboration with multiple stakeholders to ensure seamless integration and alignment.",
       "skills": ["Python", "C++", "Unit Testing", "Documentation"],
       "color": "accent"
+    },
+    {
+      "id": "xebia",
+      "title": "Senior Consultant",
+      "company": "Xebia",
+      "location": "",
+      "period": "",
+      "description": "Leading a team of four software developers in designing, developing, and maintaining a major Dutch retailer's e-commerce platform. Under my leadership, the platform has processed hundreds of thousands of orders, generating tens of millions in revenue, and expanded into Belgium, becoming a multi-lingual, multi-country system.",
+      "skills": ["E-Commerce", "Golang", "GCP", "Leadership", "International Expansion"],
+      "color": "primary"
     },
     {
       "id": "stone",
