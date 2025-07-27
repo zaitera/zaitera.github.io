@@ -60,7 +60,8 @@ export default function Footer() {
                 {personalInfo.company?.name}
                 <ExternalLink className={`h-3 w-3 opacity-70 group-hover:opacity-100 group-hover:text-primary transition-all duration-300 ${isRTL ? 'mr-1 scale-x-[-1]' : 'ml-1'}`} />
               </span>
-              . {t('footer.specialization')}
+              .
+              <br/>{t('footer.specialization')}
             </p>
             <div className={`flex ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'}`}>
               <a 

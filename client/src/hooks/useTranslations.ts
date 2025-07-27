@@ -17,7 +17,6 @@ import { about as arAbout } from '../data/ar/about';
 import { experience as arExperience } from '../data/ar/experience';
 import { education as arEducation } from '../data/ar/education';
 import { expertise as arExpertise } from '../data/ar/expertise';
-import { projects as arProjects } from '../data/ar/projects';
 import { awards as arAwards } from '../data/ar/awards';
 import { translations as arUITranslations } from '../data/ar/ui';
 
@@ -32,7 +31,6 @@ const translationData = {
     experience: enExperience,
     education: enEducation,
     expertise: enExpertise,
-    projects: enProjects,
     awards: enAwards,
     ui: enUITranslations.ui
   },
@@ -42,7 +40,6 @@ const translationData = {
     experience: arExperience,
     education: arEducation,
     expertise: arExpertise,
-    projects: arProjects,
     awards: arAwards,
     ui: arUITranslations.ui
   }

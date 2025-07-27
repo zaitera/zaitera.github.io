@@ -20,9 +20,9 @@ export default function Hero() {
     }
   };
 
-  const handleProjectsClick = () => {
+  const handleCoreExpertiseClick = () => {
     trackButtonClick('view_projects', 'hero');
-    const element = document.querySelector('#projects');
+    const element = document.querySelector('#expertise');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -148,11 +148,11 @@ export default function Hero() {
               </Button>
               <Button 
                 variant="outline"
-                onClick={handleProjectsClick}
+                onClick={handleCoreExpertiseClick}
                 className="inline-flex items-center px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-medium"
               >
                 <Folder className={`h-5 w-5 ${isRTL ? 'ml-2' : 'mr-2'}`} />
-                {t('hero.viewProjects')}
+                {t('hero.viewCoreExpertise')}
               </Button>
             </div>
             <div className={`flex items-center justify-center ${isRTL ? 'space-x-reverse space-x-6' : 'space-x-6'}`}>

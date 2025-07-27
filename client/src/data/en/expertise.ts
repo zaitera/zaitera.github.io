@@ -1,6 +1,6 @@
 export const expertise = {
   "title": "Core Expertise",
-  "description": "Specialized services designed to bridge the gap between technical excellence and strategic leadership, empowering engineers and organizations to thrive.",
+  "description": "Specialized in bridging the gap between technical excellence and strategic leadership, empowering engineers and organizations to thrive.",
   "items": [
     {
       "id": "mentorship",
@@ -17,7 +17,7 @@ export const expertise = {
       "description": "Delivering comprehensive training programs in Kotlin, Golang, and Google Cloud Platform (GCP), alongside essential leadership and communication skills. Each program is enriched with hands-on projects and real-world applications.",
       "icon": "book-open",
       "color": "primary",
-      "metrics": "200+ Hours Delivered",
+      "metrics": "100+ Hours Delivered",
       "technologies": ["Kotlin", "Golang", "GCP", "Leadership", "Communication Skills"]
     },
     {

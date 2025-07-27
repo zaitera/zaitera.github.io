@@ -1,11 +1,11 @@
 export const about = {
   "title": "About Me",
-  "description": "A Syrian-Brazilian software engineer with a passion for building bridges—between cultures, technologies, and continents. My career has taken me from developing cryptographic solutions in Brazil to scaling e-commerce platforms in Europe, giving me a unique perspective on creating globally impactful technology.",
+  "description": "A Syrian-Brazilian entrepeneur and engineer with a passion for building bridges—between cultures, technologies, and continents. My career has taken me from developing cryptographic solutions in Brazil to scaling e-commerce platforms in Europe, giving me a unique perspective on creating globally impactful technology.",
   "professionalJourney": {
     "title": "Professional Journey",
     "content": [
-      "My career began in Brazil's strategic defense sector, where I developed cryptographic solutions for the Air Force. This foundational experience in security and precision set the stage for my expansion into the global tech scene.",
-      "From optimizing machine learning models in Silicon Valley to scaling e-commerce platforms across Europe, I've embraced challenges that demand both technical depth and cultural understanding.",
+      "I started my career in Brazil's strategic defense sector, working on a cryptographic system developed by a defense technology firm for the Brazilian Air Force. This foundational experience in security and precision set the stage for my expansion into the global tech scene.",
+      "From optimizing machine learning models for companies in the US to scaling e-commerce platforms across Europe, I've embraced challenges that demand both technical depth and cultural understanding.",
       "I founded Zaitech Development to leverage this global expertise, offering consultancy and mentorship to help engineers and businesses build solutions that resonate across diverse markets."
     ]
   },

@@ -11,7 +11,7 @@ export const translations = {
     },
     hero: {
       getInTouch: "تواصل معي",
-      viewProjects: "شاهد المشاريع"
+      viewCoreExpertise: "الخبرات الأساسية"
     },
     about: {
       title: "نبذة عني",

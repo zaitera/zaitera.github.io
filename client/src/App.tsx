@@ -24,7 +24,6 @@ function AppContent() {
       <About />
       <CoreExpertise />
       <Experience />
-      <Projects />
       <Education />
       <Awards />
       <Contact />

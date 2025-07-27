@@ -11,7 +11,7 @@ export const translations = {
     },
     hero: {
       getInTouch: "Get In Touch",
-      viewProjects: "View Projects"
+      viewCoreExpertise: "View Core Expertise"
     },
     about: {
       title: "About Me",

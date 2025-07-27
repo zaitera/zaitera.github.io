@@ -8,7 +8,7 @@ export const experience = {
       "company": "Zaitech",
       "location": "Remote",
       "period": "2021 – present",
-      "description": "Founded and operate Zaitech, a boutique software‐development consultancy specialized in full‑stack, cloud‑native solutions using technologies such as Kotlin, Kotlin Multiplatform (KMP), Golang and Rust. I lead all client engagements from initial scoping through delivery, architecting scalable, efficient e‑commerce, payment processing, mobile and cloud platforms that empower SMEs and enterprises. Zaitech’s mission is to transform ideas into reality through tailored, cutting‑edge software engineering.",
+      "description": "Founded and operate Zaitech, a boutique software‐development consultancy specialized in full‑stack, cloud‑native solutions using technologies such as Kotlin, Kotlin Multiplatform (KMP), Golang and Rust. I lead all client engagements from initial scoping through delivery, architecting scalable, efficient e‑commerce, payment processing, mobile and cloud platforms that empower SMEs and enterprises. Zaitech’s mission is to transform ideas into reality through tailored, cutting‑edge engineering.",
       "skills": ["Entrepreneurship", "Software Architecture", "Kotlin", "KMP", "Golang", "Rust", "Cloud", "Full‑stack Development", "Consulting"],
       "color": "primary"
     },
@@ -18,7 +18,7 @@ export const experience = {
       "company": "ASML",
       "location": "Eindhoven, Netherlands",
       "period": "2021/10 – 2022/11",
-      "description": "Dramatically reduced machine setup time by eight hours by re-engineering calibration and performance procedures to use pre-generated data files instead of manual, from-scratch calibrations. This initiative required extensive collaboration with multiple stakeholders to ensure seamless integration and alignment.",
+      "description": "Significantly reduced machine setup time by eight hours by re-engineering calibration and performance procedures to use pre-generated data files instead of manual, from-scratch calibrations. This initiative required extensive collaboration with multiple stakeholders to ensure seamless integration and alignment.",
       "skills": ["Python", "C++", "Unit Testing", "Documentation"],
       "color": "accent"
     },
@@ -28,7 +28,7 @@ export const experience = {
       "company": "Xebia",
       "location": "",
       "period": "",
-      "description": "Leading a team of four software developers in designing, developing, and maintaining a major Dutch retailer's e-commerce platform. Under my leadership, the platform has processed hundreds of thousands of orders, generating tens of millions in revenue, and expanded into Belgium, becoming a multi-lingual, multi-country system.",
+      "description": "Lead a team of four software developers in designing, developing, and maintaining a major Dutch retailer's e-commerce platform. Under my leadership, the platform has processed hundreds of thousands of orders, generating tens of millions in revenue, and expanded into Belgium, becoming a multi-lingual, multi-country system.",
       "skills": ["E-Commerce", "Golang", "GCP", "Leadership", "International Expansion"],
       "color": "primary"
     },
@@ -38,19 +38,9 @@ export const experience = {
       "company": "Stone",
       "location": "Rio de Janeiro, Brazil",
       "period": "2019/11 – 2021/10",
-      "description": "Spearheaded the scaling of a key product from fewer than ten devices to over 230,000 active client devices. My responsibilities included implementing robust CI/CD pipelines, integrating new hardware manufacturers, and developing comprehensive monitoring services to ensure reliability and performance at scale.",
-      "skills": ["Kotlin", "Android", "Architecture", "Coroutines", "Agile"],
+      "description": "Spearheaded the scaling of a key product from fewer than ten devices to over 230,000 active client devices. My responsibilities included implementing robust CI/CD pipelines, integrating new hardware manufacturers, and developing comprehensive monitoring services to ensure reliability and performance at scale. Also, participated significantly in the development and integration of PIX (brazilian instant payment system) into the platform, enhancing transaction speed and user experience.",
+      "skills": ["Kotlin", "Payment Systems", "Android", "Architecture", "Coroutines", "Agile"],
       "color": "primary"
-    },
-    {
-      "id": "penguin",
-      "title": "Consultant Software Engineer",
-      "company": "PenguinIN",
-      "location": "Irvine, California, USA",
-      "period": "2020/09 – 2021/09",
-      "description": "Reduced the position-detection system's response time by 75% by architecting and developing a production-grade machine learning backend service from the ground up. This new system replaced a legacy ASP.NET solution, delivering significant performance gains.",
-      "skills": ["Python", "Machine Learning", "Flask", "Docker", "DevOps"],
-      "color": "accent"
     },
     {
       "id": "core",
@@ -68,8 +58,8 @@ export const experience = {
       "company": "Z-Tecnologia",
       "location": "Brasilia, Brazil",
       "period": "2018/01 – 2019/04",
-      "description": "Developed and implemented automated tests and new features for a cryptographic chip designed for use in any device with an SD card slot. The primary client for this high-security product was the Brazilian Air Force.",
-      "skills": ["C++", "Embedded Systems", "Cryptography", "Testing"],
+      "description": "Developed and implemented automated tests and new features for a cryptographic chip designed for use in any modern device. The primary client for this high-security product was the Brazilian Air Force.",
+      "skills": ["C++", "Defense Industry", "Embedded Systems", "Cryptography", "Testing"],
       "color": "accent"
     }
   ]
