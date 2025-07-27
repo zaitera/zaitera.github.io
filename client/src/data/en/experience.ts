@@ -3,6 +3,16 @@ export const experience = {
   "description": "A proven track record of delivering scalable, high-impact solutions across diverse industries and global markets.",
   "items": [
     {
+      "id": "zaitech",
+      "title": "Founder",
+      "company": "Zaitech",
+      "location": "Remote",
+      "period": "2021 – present",
+      "description": "Founded and operate Zaitech, a boutique software‐development consultancy specialized in full‑stack, cloud‑native solutions using technologies such as Kotlin, Kotlin Multiplatform (KMP), Golang and Rust. I lead all client engagements from initial scoping through delivery, architecting scalable, efficient e‑commerce, payment processing, mobile and cloud platforms that empower SMEs and enterprises. Zaitech’s mission is to transform ideas into reality through tailored, cutting‑edge software engineering.",
+      "skills": ["Entrepreneurship", "Software Architecture", "Kotlin", "KMP", "Golang", "Rust", "Cloud", "Full‑stack Development", "Consulting"],
+      "color": "primary"
+    },
+    {
       "id": "asml",
       "title": "Lead Software Engineer",
       "company": "ASML",
