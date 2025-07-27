@@ -5,7 +5,6 @@ export const translations = {
       experience: "Experience",
       education: "Education",
       expertise: "Expertise",
-      projects: "Projects",
       awards: "Awards",
       contact: "Contact"
     },

@@ -6,7 +6,7 @@ export const awards = {
       "id": "robogames-2nd",
       "title": "2nd Place Worldwide",
       "organization": "RoboGames, San Francisco CA",
-      "description": "Achieved second place in a challenging competition where our robot was programmed to identify and relocate small tubes to designated targets, competing against top teams from around the globe.",
+      "description": "Achieved second place in a challenging competition where our robot was programmed to identify and relocate small tubes to designated targets in a maze, competing against top teams from around the globe.",
       "icon": "trophy"
     },
     {
