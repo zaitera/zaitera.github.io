@@ -2,7 +2,7 @@ export const personal = {
   "name": "Abdullah Zaiter",
   "title": "Senior Consultant & Founder of Zaitech",
   "bio": "A passionate engineer and entrepreneur dedicated to scaling products, empowering teams, and bridging cultural divides through technology.",
-  "email": "abdu.zaiter@gmail.com",
+  "email": "me@zaitera.com",
   "location": "Worldwide",
   "social": {
     "github": "zaitera",
