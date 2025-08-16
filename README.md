@@ -42,6 +42,7 @@ npm run deploy
 ```
 
 This will automatically:
+
 - Build your site
 - Create/update the `gh-pages` branch
 - Deploy to GitHub Pages
@@ -86,15 +87,15 @@ If this is your first deployment, you may need to:
 2. Replace assets in `client/public/` and `attached_assets/` with your own
 3. Modify components in `client/src/components/` to change the layout and design
 4. To use your own Google Analytics ID, update the hardcoded value in:
-   - `client/index.html` (lines 10 and 16)
-   - `client/src/App.tsx` (line 36)
+    - `client/index.html` (lines 10 and 16)
+    - `client/src/App.tsx` (line 36)
 
 ## Deployment to Other Platforms
 
 This static site can be deployed to any static hosting service:
 
 - **Netlify**: Drag and drop the `dist` folder or connect your GitHub repo
-- **Vercel**: Import your GitHub project 
+- **Vercel**: Import your GitHub project
 - **Surge.sh**: Run `npm run build && surge dist/`
 - **Any web server**: Upload the `dist` folder contents
 
