@@ -8,8 +8,8 @@ export const experience = {
             "company": "Zaitech",
             "location": "Remote",
             "period": "2021 – present",
-            "description": "Founded and operate Zaitech, a boutique software‐development consultancy specialized in full‑stack, cloud‑native solutions using technologies such as Kotlin, Kotlin Multiplatform (KMP), Golang and Rust. I lead all client engagements from initial scoping through delivery, architecting scalable, efficient e‑commerce, payment processing, mobile and cloud platforms that empower SMEs and enterprises. Zaitech’s mission is to transform ideas into reality through tailored, cutting‑edge engineering.",
-            "skills": ["Entrepreneurship", "Software Architecture", "Kotlin", "KMP", "Golang", "Rust", "Cloud", "Full‑stack Development", "Consulting"],
+            "description": "Founded and lead Zaitech, a boutique technology consultancy focused on solving real business challenges with practical, AI-driven and cloud-native software solutions. I manage all client engagements end-to-end, from strategy and market analysis through architecture and delivery, building scalable platforms in e-commerce, payments, mobile, and cloud.  Combining entrepreneurship, leadership, and deep expertise in software architecture, I help SMEs and enterprises turn ideas into adaptable, high-impact solutions.",
+            "skills": ["Leadership", "Strategic Planning", "Entrepreneurship", "Software Architecture", "Full-stack Development", "Cloud", "Consulting"],
             "color": "primary"
         },
         {
