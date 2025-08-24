@@ -1,6 +1,6 @@
 export const about = {
     "title": "About Me",
-    "description": "A Syrian-Brazilian entrepeneur and engineer with a passion for building bridges—between cultures, technologies, and continents. My career has taken me from developing cryptographic solutions in Brazil to scaling e-commerce platforms in Europe, giving me a unique perspective on creating globally impactful technology.",
+    "description": "A Syrian-Brazilian entrepeneur and engineer with a passion for building bridges—between cultures, technologies, and continents. My career has taken me from developing cryptographic solutions for the Brazilian Air Force to scaling e-commerce platforms in Europe, giving me a unique perspective on creating globally impactful technology.",
     "professionalJourney": {
         "title": "Professional Journey",
         "content": [
