@@ -2,6 +2,7 @@ import {Button} from '@/components/ui/button';
 import {Mail} from 'lucide-react';
 import {useTranslations} from '../hooks/useTranslations';
 import {useLanguage} from '../contexts/LanguageContext';
+import {trackContactInteraction} from '../lib/analytics';
 
 export default function Contact() {
     const {translations, t, loading} = useTranslations();
@@ -35,6 +36,7 @@ export default function Contact() {
                         <div className="text-center">
                             <a
                                 href={`mailto:${personalInfo.email}`}
+                                onClick={() => trackContactInteraction('email')}
                                 className="text-lg text-primary hover:text-primary/80 font-medium transition-colors"
                             >
                                 {personalInfo.email}
@@ -46,7 +48,10 @@ export default function Contact() {
                             variant="outline"
                             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                         >
-                            <a href={`mailto:${personalInfo.email}`}>
+                            <a
+                                href={`mailto:${personalInfo.email}`}
+                                onClick={() => trackContactInteraction('email')}
+                            >
                                 <Mail className={`h-4 w-4 ${isRTL ? 'ml-2' : 'mr-2'}`}/>
                                 {t('contact.email')}
                             </a>

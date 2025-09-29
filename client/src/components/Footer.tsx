@@ -1,6 +1,7 @@
 import {ExternalLink, Github, Instagram, Linkedin, Rss} from 'lucide-react';
 import {useTranslations} from '../hooks/useTranslations';
 import {useLanguage} from '../contexts/LanguageContext';
+import {trackSocialClick, trackExternalLink} from '../lib/analytics';
 
 export default function Footer() {
     const {translations, t, loading} = useTranslations();
@@ -15,6 +16,7 @@ export default function Footer() {
     };
 
     const handleZaitechClick = () => {
+        trackExternalLink(personalInfo?.company?.website || '', personalInfo?.company?.name);
         window.open(personalInfo?.company?.website, '_blank', 'noopener,noreferrer');
     };
 
@@ -69,6 +71,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-primary transition-colors duration-200"
+                                onClick={() => trackSocialClick('GitHub')}
                             >
                                 <Github className="h-6 w-6"/>
                             </a>
@@ -77,6 +80,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-primary transition-colors duration-200"
+                                onClick={() => trackSocialClick('LinkedIn')}
                             >
                                 <Linkedin className="h-6 w-6"/>
                             </a>
@@ -85,6 +89,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-primary transition-colors duration-200"
+                                onClick={() => trackExternalLink(personalInfo.company?.blog || '', 'Blog')}
                             >
                                 <Rss className="h-6 w-6"/>
                             </a>
@@ -93,6 +98,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-primary transition-colors duration-200"
+                                onClick={() => trackSocialClick('Instagram')}
                             >
                                 <Instagram className="h-6 w-6"/>
                             </a>

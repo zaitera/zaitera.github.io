@@ -3,7 +3,8 @@ import {TooltipProvider} from "@/components/ui/tooltip";
 import {ThemeProvider} from "./components/ThemeProvider";
 import {LanguageProvider} from "./contexts/LanguageContext";
 import {useEffect} from "react";
-import {initGA, setupSectionTracking} from "./lib/analytics";
+import {setupSectionTracking} from "./lib/analytics";
+import {useScrollDepthTracking} from "./hooks/useScrollDepthTracking";
 
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
@@ -32,10 +33,10 @@ function AppContent() {
 }
 
 function App() {
-    useEffect(() => {
-        // Initialize Google Analytics when the app starts
-        initGA('G-VJ87CS1PZ0');
+    // Track scroll depth for engagement metrics
+    useScrollDepthTracking();
 
+    useEffect(() => {
         // Setup section tracking after components mount
         const timer = setTimeout(() => {
             setupSectionTracking();

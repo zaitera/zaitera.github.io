@@ -6,20 +6,15 @@ declare global {
     }
 }
 
-// Initialize Google Analytics
-export const initGA = (measurementId: string) => {
-    if (typeof window === 'undefined' || !measurementId) return;
+export const GA_MEASUREMENT_ID = 'G-N39NQHPF0J';
 
-    window.gtag = window.gtag || function () {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push(arguments);
-    };
+// Track page views
+export const trackPageView = (url: string, title?: string) => {
+    if (typeof window === 'undefined' || !window.gtag) return;
 
-    window.gtag('js', new Date());
-    window.gtag('config', measurementId, {
-        page_title: document.title,
-        page_location: window.location.href,
-        send_page_view: true
+    window.gtag('config', GA_MEASUREMENT_ID, {
+        page_path: url,
+        page_title: title,
     });
 };
 
@@ -52,6 +47,16 @@ export const trackSocialClick = (platform: string) => {
 // Track section views (for scroll tracking)
 export const trackSectionView = (sectionName: string) => {
     trackEvent('view', 'section', sectionName);
+};
+
+// Track external link clicks
+export const trackExternalLink = (url: string, linkText?: string) => {
+    trackEvent('click', 'external_link', linkText || url);
+};
+
+// Track contact interactions
+export const trackContactInteraction = (method: 'email' | 'form' | 'social', platform?: string) => {
+    trackEvent('contact', 'interaction', platform ? `${method}_${platform}` : method);
 };
 
 // Setup intersection observer for section tracking
